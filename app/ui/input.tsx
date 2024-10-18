@@ -1,6 +1,6 @@
 import React from "react";
 import { EyeSlashIcon, EyeIcon } from "@heroicons/react/16/solid";
-import Image, { ImageProps } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 const InputField = ({
   label,
@@ -37,7 +37,7 @@ const PasswordField = ({
   label: string;
   id: string;
   isVisible: boolean;
-  toggleVisibility: any;
+  toggleVisibility;
 }) => {
   return (
     <div className="flex flex-col mb-2">

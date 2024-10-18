@@ -6,7 +6,7 @@ export default function VerifyEmail() {
   const [code, setCode] = useState(Array(4).fill(""));
 
   // Function to handle input change
-  const handleChange = (e:any, index:number) => {
+  const handleChange = (e, index:number) => {
     const { value } = e.target;
     if (/^\d*$/.test(value)) { // Allow only numeric input
       const newCode = [...code];
