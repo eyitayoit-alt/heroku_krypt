@@ -35,6 +35,7 @@ export default function VerifyEmail() {
         <ButtonPrimary
           label="Verify Email"
           style="w-full h-12 bg-blue-800 hover:bg-blue-600 text-white font-semibold rounded-md transition duration-300"
+        src=""
         />
       </form>
       

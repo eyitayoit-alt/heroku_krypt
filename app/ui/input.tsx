@@ -98,10 +98,10 @@ const SubmitButton =({label}:{label:string})=>{
     )
 
 }
-const ButtonPrimary =({label, style}:{label:string,style:string})=>{
+const ButtonPrimary =({label, style,src}:{label:string,style:string,src:string})=>{
   return(
       <button className={style}>
-          {label}
+         <Link href={`/${src}`}> {label}</Link>
       </button>
   )
 
