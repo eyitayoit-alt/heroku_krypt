@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import dns from 'dns'
+dns.setDefaultResultOrder("ipv4first");
+const nextConfig = {
+   
+};
 
 export default nextConfig;

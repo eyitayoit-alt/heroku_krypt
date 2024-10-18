@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Header,Footer } from "./ui";
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Krypt app",
-  description: "A File Encryption App",
+  description: "The most secure file encryption and decryption service for protecting your data.",
 };
 
 export default function RootLayout({
@@ -25,11 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <UserProvider>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
+      </UserProvider>
     </html>
   );
 }

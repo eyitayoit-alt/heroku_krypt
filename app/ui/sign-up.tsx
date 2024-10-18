@@ -45,7 +45,7 @@ export default function SignUp() {
                 </div>
                 <SubmitButton label="Sign up" />
                 <p className="text-center text-gray-700 text-base">
-                    Have an account already? <Link href="/login" className="text-blue-500">Sign in here</Link>
+                    Have an account already? <Link href="/Login" className="text-blue-500">Sign in here</Link>
                 </p>
             </form>
         </div>
