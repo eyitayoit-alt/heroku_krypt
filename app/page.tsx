@@ -1,6 +1,5 @@
 import Image from "next/image";
 import {lock,compliance, dataProtection} from "./images"
-import { ButtonPrimary } from "./ui/input";
 
 export default function Home() {
 
@@ -24,7 +23,7 @@ export default function Home() {
            </li>
           <li className="text-lg mb-2">Use state-of-the-art encryption algorithms like AES-256 and RSA to secure your files.</li>
           <li className="text-lg mb-2">Upload, encrypt, decrypt, and download files seamlessly with our user-friendly interface.</li>
-          <li className="text-lg mb-2" >Access our services on any device, whether it's Windows, Mac, or mobile.</li>
+          <li className="text-lg mb-2" >Access our services on any device, whether it &apos;s Windows, Mac, or mobile.</li>
           </ul>
          {/* <ButtonPrimary label="Get Started" src="" style="bg-red-600 text-white font-bold w-1/4 h-12 rounded-xl"/>*/}
            <button className="bg-red-600 text-white font-bold w-1/4 h-12 rounded-xl"><a href="/api/auth/login">Login</a></button>

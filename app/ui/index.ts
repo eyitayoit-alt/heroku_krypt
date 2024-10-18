@@ -6,4 +6,4 @@ import Login from "./login-form";
 import ForgotPassword from "./forgot-password";
 import SignUp from "./sign-up";
 
-export {Header,Footer,InputField,PasswordField,ButtonPrimary,ButtonIcon,SubmitButton,Login ,ForgotPassword,SignUp}
+export {Header,Footer,InputField,PasswordField,ButtonPrimary,ButtonIcon,SubmitButton,Login ,ForgotPassword,SignUp,VerifyEmail}

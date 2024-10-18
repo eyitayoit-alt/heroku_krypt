@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState} from "react";
 import { InputField,PasswordField,ButtonIcon,SubmitButton } from "./input";
 import Link from "next/link";
 import GoogleIcon from "../images/google.svg";
@@ -38,7 +38,7 @@ export default function Login() {
                 </div>
                 <SubmitButton label="Sign in"  />
                 <p className="text-center text-gray-700 text-base">
-                    Don't have an account? <Link href="/Signup" className="text-blue-500">Sign up here</Link>
+                    Don &apos;t have an account? <Link href="/Signup" className="text-blue-500">Sign up here</Link>
                 </p>
             </form>
 
