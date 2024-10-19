@@ -22,6 +22,7 @@ interface ButtonIconProps {
   label: string;
   icon: string;
   alt: string;
+  href:string
 }
 
 interface SubmitButtonProps {
@@ -79,18 +80,18 @@ const PasswordField: React.FC<PasswordFieldProps> = ({ label, id, isVisible, tog
 );
 
 // ButtonIcon component
-const ButtonIcon: React.FC<ButtonIconProps> = ({ label, icon, alt }) => (
+const ButtonIcon: React.FC<ButtonIconProps> = ({ label, icon, alt,href }) => (
   <button
     type="button"
     className="bg-gray-700 w-full h-12 rounded-md mb-2 flex items-center justify-center text-white hover:bg-gray-500"
   >
-    <Image src={icon} alt={alt} className="mr-2" /> {label}
+    <a href={href}><Image src={icon} alt={alt} className="mr-2" />  {label} </a>
   </button>
 );
 
 // SubmitButton component
 const SubmitButton: React.FC<SubmitButtonProps> = ({ label }) => (
-  <button className="bg-blue-800 w-full h-12 rounded-md mb-4 hover:bg-blue-600 text-white">
+  <button className="bg-red-600 w-full h-12 rounded-md mb-4 hover:bg-red-800 text-white">
     {label}
   </button>
 );

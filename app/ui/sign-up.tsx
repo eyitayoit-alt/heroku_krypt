@@ -1,8 +1,8 @@
 "use client";
 import React, { useState} from "react";
-import { InputField,PasswordField, ButtonIcon, SubmitButton } from "./input";
+import { InputField,PasswordField,  SubmitButton } from "./input";
 import Link from "next/link";
-import GoogleIcon from "../images/google.svg";
+
 
 const SignUp: React.FC =()=>{
     const [isPasswordVisible, setPasswordVisibility] = useState<boolean>(false);
@@ -18,7 +18,6 @@ const SignUp: React.FC =()=>{
             <p className="text-center font-bold mb-4">Signup</p>
             
             <form className="bg-white shadow-md rounded border-2 px-8 py-6">
-               <ButtonIcon label="Sign up with Google" icon={GoogleIcon} alt="Google Icon" />
                <p className="text-center text-gray-700 text-base">
             or
             </p>

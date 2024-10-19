@@ -35,7 +35,7 @@ const Home: React.FC = () => {
             </li>
           </ul>
           <button className="bg-red-600 text-white font-bold w-1/4 h-12 rounded-xl">
-            <a href="/api/auth/login">Login</a>
+            <a href="./Login">Login</a>
           </button>
         </div>
       </section>
