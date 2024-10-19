@@ -4,7 +4,7 @@ import { InputField,SubmitButton } from "./input";
 import Link from "next/link";
 
 
-export default function ForgotPassword() {
+const ForgotPassword:React.FC = ()=>{
     
     return (
         <div className="w-full max-w-md m-auto mt-4 p-6">
@@ -20,3 +20,5 @@ export default function ForgotPassword() {
         </div>
     );
 }
+
+export default ForgotPassword;

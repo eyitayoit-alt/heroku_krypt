@@ -1,6 +1,9 @@
 import VerifyEmail from "../ui/verify-email";
-export default  function Page(){
+
+const Page:React.FC=()=>{
  return(
     <VerifyEmail/>
  )
 }
+
+export default Page;

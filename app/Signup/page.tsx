@@ -1,6 +1,9 @@
 import SignUp from "../ui/sign-up";
-export default  function Page(){
+
+const Page:React.FC=()=>{
  return(
+
     <SignUp />
  )
 }
+export default Page;

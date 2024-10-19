@@ -4,10 +4,10 @@ import { InputField,PasswordField, ButtonIcon, SubmitButton } from "./input";
 import Link from "next/link";
 import GoogleIcon from "../images/google.svg";
 
-export default function SignUp() {
-    const [isPasswordVisible, setPasswordVisibility] = useState(false);
+const SignUp: React.FC =()=>{
+    const [isPasswordVisible, setPasswordVisibility] = useState<boolean>(false);
 
-    const togglePasswordVisibility = () => {
+    const togglePasswordVisibility = ():void => {
      
         setPasswordVisibility(!isPasswordVisible);
         
@@ -52,3 +52,4 @@ export default function SignUp() {
     );
 }
 
+export default SignUp;

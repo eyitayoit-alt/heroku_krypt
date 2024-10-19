@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { KeyIcon } from "@heroicons/react/20/solid";
-export default function Header(){
+
+const Header: React.FC=()=>{
 
     return(
     <header className="bg-white dark:bg-gray-800 shadow-md p-4">
@@ -17,3 +18,4 @@ export default function Header(){
 
     )
 }
+ export default Header;
