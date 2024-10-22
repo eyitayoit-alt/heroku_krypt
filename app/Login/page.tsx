@@ -1,6 +1,9 @@
 import Login from "../ui/login-form";
-export default  function Page(){
+
+const Page:React.FC=()=>{
  return(
     <Login />
  )
 }
+
+export default Page;

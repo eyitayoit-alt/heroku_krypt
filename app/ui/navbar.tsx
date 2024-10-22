@@ -1,5 +1,9 @@
 import Link from "next/link"
-const NavList = ({items,style}:{items:string[],style:string})=>{
+interface NavListProps{
+    items:[],
+    style: string
+}
+const NavList:React.FC<NavListProps> = ({items,style})=>{
 return(
     <ul className={style}>
        {items.map((ele,index)=>(

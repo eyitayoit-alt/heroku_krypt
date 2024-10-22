@@ -1,12 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, ChangeEvent } from "react";
 import { ButtonPrimary } from "./input";
 
-export default function VerifyEmail() {
-  const [code, setCode] = useState(Array(4).fill(""));
+// VerifyEmail component
+const VerifyEmail: React.FC = () => {
+  const [code, setCode] = useState<string[]>(Array(4).fill(""));
 
   // Function to handle input change
-  const handleChange = (e, index:number) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>, index: number): void => {
     const { value } = e.target;
     if (/^\d*$/.test(value)) { // Allow only numeric input
       const newCode = [...code];
@@ -28,17 +29,18 @@ export default function VerifyEmail() {
               maxLength={1}
               value={digit}
               onChange={(e) => handleChange(e, index)}
-              className="w-10 h-10  text-center border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+              className="w-10 h-10 text-center border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
             />
           ))}
         </div>
         <ButtonPrimary
           label="Verify Email"
           style="w-full h-12 bg-blue-800 hover:bg-blue-600 text-white font-semibold rounded-md transition duration-300"
-        src=""
+          src=""
         />
       </form>
-      
     </div>
   );
-}
+};
+
+export default VerifyEmail;
